@@ -41,3 +41,18 @@ A Python-based defensive security utility that uses SHA-256 cryptographic hashin
 This is an educational prototype. Its baseline is stored locally and is not protected against an attacker who can modify both the monitored files and baseline.
 
 Future improvements will include baseline protection, stronger error handling, and automated reporting.
+
+### Automated Unit Tests
+
+The project includes a Python unittest suite covering:
+
+- Consistency of SHA-256 hash generation
+- Detection of file content changes
+- Correct SHA-256 digest length
+- Handling of missing files
+
+Test command:
+
+python -m unittest discover -s tests -v
+
+Latest test results: 4 tests passed.S
